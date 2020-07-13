@@ -6,19 +6,21 @@
     "target": "es2015",
     "declaration": true,
     "inlineSources": true,
-    "types": [],
-    "lib": [
-      "dom",
-      "es2018"
-    ]
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "lib": ["dom", "es2018"],
+    "moduleResolution": "node",
+    "module": "es2020",
+    "typeRoots": ["node_modules/@types"]
   },
   "angularCompilerOptions": {
-    "skipTemplateCodegen": false,
-    "strictMetadataEmit": false,
-    "enableResourceInlining": false
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "strictInjectionParameters": true,
+    "enableResourceInlining": true
   },
-  "exclude": [
-    "src/test.ts",
-    "**/*.spec.ts"
-  ]
+  "exclude": ["src/test.ts", "**/*.spec.ts"]
 }
