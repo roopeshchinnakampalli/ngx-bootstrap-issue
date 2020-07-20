@@ -10,7 +10,6 @@ import { Component, OnInit } from "@angular/core";
         [popover]="test"
         popoverTitle="Popover on top"
         placement="top"
-        #pop3="bs-popover"
       >
         Popover on top
       </a>
